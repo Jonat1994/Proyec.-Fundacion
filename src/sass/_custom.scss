@@ -1,0 +1,38 @@
+$amarillo: #F9CC43;
+$rojo: #F14B3B;
+$azul: #4C96E1;
+$verde: #77DD77;
+$grisOscuro: #6A6F73;
+$blanco: #FFFFFF;
+$negro: #2F2E2D;
+$azulOscuro: #162039;
+
+// Rescribir colores de bootstrap
+$primary: $azul;
+$danger: $rojo;
+$warning: $amarillo;
+$success: $verde;
+$light: $grisOscuro;
+$white: $blanco;
+$dark: $negro;
+
+// Tipografia
+$fuente-heading: 'Rubik', sans-serif;
+$fuente-texto: 'Rubik', sans-serif;
+
+$headings-font-family: $fuente-heading;
+$headings-font-weight: bold;
+
+$h1-font-size: 3.4rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2.6rem;
+$h4-font-size: 2.2rem;
+
+// Carousel
+.carousel-indicators.valores {
+    bottom: -15px !important;
+    margin-bottom: 0;
+}
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,116 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+
+.nosotros_main {
+    .img_logo {
+        max-width: 320px;
+        max-height: auto;
+    }
+}
+
+.nosotros_title {
+    @include m.background-image-white('../img/Programa de alfabetizacion/programaDeAlfabetizacion-1.webp');
+
+    h1 {
+        font-weight: 500;
+    }
+}
+
+.nosotros_grid_valores {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .div_danger {
+        border-left: 10px solid $danger;
+        padding-left: 10px;
+
+        .fs-5 {
+            border-bottom: 1px solid $danger;
+            padding-bottom: 1px;
+        }
+    }
+
+    .div_primary {
+        border-left: 10px solid $primary;
+        padding-left: 10px;
+
+        .fs-5 {
+            border-bottom: 1px solid $primary;
+            padding-bottom: 1px;
+        }
+    }
+
+    .div_warning {
+        border-left: 10px solid $warning;
+        padding-left: 10px;
+
+        .fs-5 {
+            border-bottom: 1px solid $warning;
+            padding-bottom: 1px;
+        }
+    }
+
+    .div_success {
+        border-left: 10px solid $success;
+        padding-left: 10px;
+
+        .fs-5 {
+            border-bottom: 1px solid $success;
+            padding-bottom: 1px;
+        }
+    }
+
+    div:last-child {
+        @include media-breakpoint-up(lg) {
+            grid-column: 2/3;
+        }
+    }
+}
+
+#fundadores {
+    .fundador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+            height: 450px;
+            max-width: 300px;
+            filter: grayscale(90%);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                filter: grayscale(0%);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+.nosotros_equipo_imglogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 230px;
+    height: 230px;
+    transform: translate(-50%, -50%);
+    opacity: 30%;
+    z-index: 1;
+}
+
+.text-justify {
+    text-align: justify !important;
+}

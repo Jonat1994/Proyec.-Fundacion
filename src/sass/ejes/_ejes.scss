@@ -1,0 +1,182 @@
+@use '../custom' as *;
+
+.eje_container {
+    border-radius: 6px;
+
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 45px;
+        width: 120px;
+        height: 120px;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 45px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .eje_title {
+        color: $white;
+        border-radius: 0 12px 12px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .eje_salud {
+        border-right: 1px solid darken($danger, 20%);
+
+        i {
+            background-color: darken($danger, 20%);
+        }
+
+        .eje_title {
+            background-color: darken($danger, 20%);
+        }
+
+        & ~ div .eje_info {
+            border-bottom: 3px solid darken($danger, 20%);
+            padding-top: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        & ~ div .eje_button {
+            background-color: $white;
+            color: $danger;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($danger, 20%) !important;
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+
+    .eje_educacion {
+        border-right: 1px solid darken($primary, 20%);
+
+        i {
+            background-color: darken($primary, 20%);
+        }
+
+        .eje_title {
+            background-color: darken($primary, 20%);
+        }
+
+        & ~ div .eje_info {
+            border-bottom: 3px solid darken($primary, 20%);
+            padding-top: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        & ~ div .eje_button {
+            background-color: $white;
+            color: $primary;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($primary, 20%) !important;
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+
+    .eje_desarrollo {
+        border-right: 1px solid darken($warning, 20%);
+
+        span {
+            background-color: darken($warning, 20%);
+        }
+
+        .eje_title {
+            background-color: darken($warning, 20%);
+        }
+
+        & ~ div .eje_info {
+            border-bottom: 3px solid darken($warning, 20%);
+            padding-top: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        & ~ div .eje_button {
+            background-color: $white;
+            color: $warning;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($warning, 20%) !important;
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+
+    .eje_ambiente {
+        border-right: 1px solid darken($success, 20%);
+
+        span {
+            background-color: darken($success, 20%);
+        }
+
+        .eje_title {
+            background-color: darken($success, 20%);
+        }
+
+        & ~ div .eje_info {
+            border-bottom: 3px solid darken($success, 20%);
+            padding-top: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        & ~ div .eje_button {
+            background-color: $white;
+            color: $success;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($success, 20%) !important;
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+
+    .eje_sostenibilidad {
+        border-right: 1px solid darken($dark, 20%);
+
+        span {
+            background-color: darken($dark, 20%);
+        }
+
+        .eje_title {
+            background-color: darken($dark, 20%);
+        }
+
+        & ~ div .eje_info {
+            border-bottom: 3px solid darken($dark, 20%);
+            padding-top: 10px;
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        & ~ div .eje_button {
+            background-color: $white;
+            color: $dark;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($dark, 20%) !important;
+                background-color: darken($white, 2%);
+            }
+        }
+    }
+}

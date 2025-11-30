@@ -1,0 +1,126 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+@use '../base/animaciones' as *;
+
+.modal-body_donates {
+    .donation-method {
+        h5 {
+            font-size: 1.2rem;
+            color: $dark;
+            i {
+                font-size: 1.5rem;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .donation-amounts {
+        .amount-btn {
+            min-width: 80px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-width: 2px;
+            
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            }
+            
+            &.active {
+                background-color: $primary;
+                border-color: $primary;
+                color: $white;
+                box-shadow: 0 4px 12px rgba($primary, 0.4);
+            }
+        }
+    }
+    
+    .bank-info {
+        border-left: 4px solid $success;
+        font-family: 'Courier New', monospace;
+        
+        strong {
+            color: $dark;
+            min-width: 80px;
+            display: inline-block;
+        }
+        
+        .btn-link {
+            padding: 0;
+            font-size: 0.9rem;
+        }
+    }
+    
+    #paypal-button-container {
+        min-height: 50px;
+        margin-top: 15px;
+        
+        .alert {
+            border-radius: 8px;
+        }
+    }
+    
+    .input-group {
+        .form-control {
+            font-size: 1.1rem;
+            font-weight: 600;
+            
+            &:focus {
+                border-color: $primary;
+                box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+            }
+        }
+        
+        .btn-primary {
+            font-weight: 600;
+            min-width: 180px;
+        }
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .link_whatsapp {
+        font-size: 24px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .link_whatsapp:hover {
+        color: $success !important;
+        transform: scale(1.05);
+    }
+
+    .link_facebook {
+        font-size: 24px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .link_facebook:hover {
+        color: $primary !important;
+        transform: scale(1.05);
+    }
+}
+
+/** MODAL DE TALLERES  **/
+.modal_taller {
+    .pe-lg-1 {
+        border-right: 0;
+        border-bottom: 0.5px solid $secondary;
+
+        @include media-breakpoint-up(lg) {
+            border-right: 0.5px solid $secondary;
+            border-bottom: 0;
+        }
+    }
+}

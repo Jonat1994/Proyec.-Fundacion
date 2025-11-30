@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+
+.contacto_social {
+    font-size: 30px;
+
+    a {
+        color: $white;
+        background-color: $dark;
+        border: 1px solid transparents;
+        border-radius: 6px;
+        height: 26px;
+        width: 110px;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .fb:hover {
+        background-color: $azul;
+    }
+
+    .ws:hover {
+        background-color: $verde;
+    }
+
+    .int:hover {
+        background-color: $amarillo;
+    }
+}

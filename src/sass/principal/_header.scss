@@ -1,0 +1,94 @@
+@use '../custom' as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    height: auto;
+    min-height: 71px;
+    width: 100%;
+    padding: 8px 15px;
+    background-color: $white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    // Efecto de sombra al hacer scroll
+    &.scrolled {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+        padding: 5px 15px;
+    }
+
+    .header_logo {
+        height: 50px;
+        width: 50px;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    #btn_Eng, #btn_Spa {
+        text-decoration: none;  
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+
+    #btn_Eng:hover, #btn_Spa:hover {
+        color: $primary !important;
+        background-color: rgba($primary, 0.1);
+    }
+
+    #btn_Eng.active, #btn_Spa.active {
+        color: $primary !important;
+        font-weight: 600;
+    }
+
+    .nav {
+        display: none !important;
+
+        @include media-breakpoint-up(lg) {
+            display: flex !important;
+        }
+    }
+}
+
+.lenguage_button {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 12px !important;
+    border-radius: 6px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: $primary;
+        transition: width 0.3s ease;
+    }
+    
+    &:hover {
+        color: $primary !important;
+        background-color: rgba($primary, 0.05);
+        
+        &::after {
+            width: 60%;
+        }
+    }
+}

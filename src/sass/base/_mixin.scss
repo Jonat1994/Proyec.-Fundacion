@@ -1,0 +1,35 @@
+@mixin background-image($url) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgb( 0 0 0 / .6)), url($url);
+    background-position: 50%;
+    background-size: cover;
+}
+
+@mixin background-image-white($url) {
+    background-image: linear-gradient(to right, rgba(156, 156, 156, 0.532), rgba(156, 156, 156, 0.532)), url($url);
+    background-position: 50%;
+    background-size: cover;
+}
+
+@mixin background-image-red($url) {
+    background-image: linear-gradient(to right, #f14a3be0, #f14a3be0), url($url);
+    background-position: 50%;
+    background-size: cover;
+}
+
+@mixin background-image-blue($url) {
+    background-image: linear-gradient(to right, #4c96e1e0, #4c96e1e0), url($url);
+    background-position: 50%;
+    background-size: cover;
+}
+
+@mixin background-image-green($url) {
+    background-image: linear-gradient(to right, #77dd77e0, #77dd77e0), url($url);
+    background-position: 50%;
+    background-size: cover;
+}
+
+@mixin background-image-yellow($url) {
+    background-image: linear-gradient(to right, #f9cb43e0, #f9cb43e0), url($url);
+    background-position: 50%;
+    background-size: cover;
+}

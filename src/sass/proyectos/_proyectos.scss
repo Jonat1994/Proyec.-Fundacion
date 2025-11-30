@@ -1,0 +1,14 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+
+.proyecto_main {
+    .col-lg-5 {
+        background-color: #E9E6DD;
+    }
+
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+}

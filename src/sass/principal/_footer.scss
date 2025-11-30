@@ -1,0 +1,74 @@
+@use '../custom' as *;
+@use '../base/animaciones' as *;
+
+.footer {
+    background: linear-gradient(135deg, lighten($grisOscuro, 45%) 0%, lighten($grisOscuro, 50%) 100%);
+    border-top: 4px solid $primary;
+    padding: 50px 0 30px 0 !important;
+
+    .footer_title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $dark;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, $primary, $warning);
+            border-radius: 2px;
+        }
+    }
+    
+    .nav-link {
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $primary !important;
+            padding-left: 8px !important;
+        }
+    }
+}
+
+.footer_social {
+    font-size: 24px;
+    gap: 15px;
+
+    a {
+        color: $white;
+        background: linear-gradient(135deg, $dark 0%, lighten($dark, 10%) 100%);
+        border: none;
+        border-radius: 8px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .fb:hover {
+        background: linear-gradient(135deg, #1877F2 0%, darken(#1877F2, 10%) 100%) !important;
+    }
+
+    .ws:hover {
+        background: linear-gradient(135deg, #25D366 0%, darken(#25D366, 10%) 100%) !important;
+    }
+
+    .int:hover {
+        background: linear-gradient(135deg, #E4405F 0%, darken(#E4405F, 10%) 100%) !important;
+    }
+}

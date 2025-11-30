@@ -1,0 +1,37 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+
+.main_galeria {
+    h1 {
+        font-weight: 500;
+    }
+
+    .galeria_menu {
+       a {
+            background-color: $azul;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $white;
+            font-weight: bold;
+
+            &:hover {
+                filter: brightness(92%);
+            }
+       }
+    }
+
+    .galeria li:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    
+    .galeria li {
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    .galeria li:hover {
+        filter: brightness(85%);
+    }
+}

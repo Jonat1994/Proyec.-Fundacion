@@ -1,0 +1,82 @@
+@use '../custom' as *;
+@use '../base/animaciones' as *;
+
+section.container-xl {
+    &.py-5 {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+        
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $dark;
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 20px;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 4px;
+                background: linear-gradient(90deg, $primary, $warning);
+                border-radius: 2px;
+            }
+        }
+        
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $primary;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        
+        .row.mt-5 {
+            margin-top: 50px !important;
+            
+            .col-md-6 {
+                img {
+                    border-radius: 16px;
+                    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.3s ease;
+                    
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+            
+            .col-md-5 {
+                padding: 30px;
+                background-color: lighten($primary, 48%);
+                border-radius: 16px;
+                
+                h4 {
+                    margin-top: 0;
+                }
+                
+                p {
+                    font-size: 1.1rem;
+                    line-height: 1.8;
+                    color: lighten($dark, 10%);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: lighten($dark, 10%);
+            margin-top: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+

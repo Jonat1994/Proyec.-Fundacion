@@ -1,0 +1,178 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+@use '../base/animaciones' as *;
+
+.section_familia {
+    @include m.background-image('../img/image_familia.webp');
+    color: $white;
+    padding: 8rem 0;
+    object-fit: cover;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+        z-index: 1;
+    }
+    
+    .container-xl {
+        position: relative;
+        z-index: 2;
+        
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            
+            a {
+                color: $warning;
+                font-weight: 600;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    color: lighten($warning, 10%);
+                    text-decoration-color: $warning;
+                }
+            }
+        }
+    }
+}
+
+// Estilos para la sección Misión/Valores
+section.container-xl {
+    .row.py-5 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        
+        .col-lg-5 {
+            background-color: $white;
+            padding: 40px 30px !important;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+                transform: translateY(-5px);
+            }
+            
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: $primary;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 15px;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 60px;
+                    height: 3px;
+                    background: linear-gradient(90deg, $primary, $warning);
+                    border-radius: 2px;
+                }
+            }
+            
+            p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: lighten($dark, 15%);
+            }
+        }
+    }
+}
+
+.valor_text {
+    font-weight: 600;
+    font-size: 1.5rem !important;
+    color: $primary;
+    margin-bottom: 15px !important;
+}
+
+.carousel-inner {
+    min-height: 220px;
+    padding: 20px;
+}
+
+.carousel-item {
+    padding: 20px 0;
+    
+    .mt-1 {
+        line-height: 1.8;
+        font-size: 1rem;
+        color: lighten($dark, 10%);
+    }
+}
+
+.carousel-indicators.valores {
+    button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $primary;
+        opacity: 0.3;
+        transition: all 0.3s ease;
+        
+        &.active {
+            opacity: 1;
+            width: 30px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.contacto_social_voluntariado {
+    font-size: 40px;
+
+    a {
+        text-decoration: none;
+        color: $secondary;
+    }
+
+    .fb:hover {
+        color: $primary;
+    }
+
+    .ws:hover {
+        color: $success;
+    }
+
+    .inst:hover {
+        color: $warning;
+    }
+}
+
+.modal-body {
+    overflow: hidden !important;
+
+    .col-voluntariado {
+        h4 {
+            color: #162039 !important;
+        }
+
+        p.fw-bold {
+            color: #162039 !important;
+        }
+    }
+}

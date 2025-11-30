@@ -1,0 +1,31 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+
+
+.colaboradores_content {
+    .link_colaborador {
+        text-decoration: none;
+        font-size: 24px;
+    
+        &:hover {
+            color: $primary !important;
+        }
+    
+        i {
+            font-weight: bolder;
+        }
+    }
+    
+    .colaboradores_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 116px !important;
+        margin-bottom: 10px;
+
+        img {
+            max-height: 116px;
+        }
+    }
+ }
+

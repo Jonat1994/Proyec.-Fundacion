@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../build/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/webp" href="../build/img/Logo FunRobHum.webp">
+    <title>funrobhum</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-xl">
+            <div class="row p-2">
+                <div class="d-flex gap-2 align-items-center col-lg-1 col-6">
+                    <img class="header_logo img-fluid" src="../build/img/Logo FunRobHum.webp" alt="">
+                </div>
+    
+                <nav class="nav d-flex align-items-center justify-content-md-start justify-content-between col-lg-9">
+                    <a href="index.html" class="nav-link text-light pe-0">Home</a>
+                    <a href="galeria.html" class="nav-link text-light ps-md-5 pe-0">Gallery</a>
+                    <a href="ejes.html" class="nav-link text-light ps-md-5 pe-0">Axes</a>
+                    <a href="proyectos.html" class="nav-link text-light ps-md-5 pe-0">Projects</a>
+                    <a href="nosotros.html" class="nav-link text-light ps-md-5 pe-0">About us</a>
+                    <a href="contactanos.html" class="nav-link text-light ps-md-5 pe-0">Contact us</a>
+                </nav>
+    
+                <div class="col-4 col-sm-5 col-lg-2 d-flex align-items-center justify-content-lg-center justify-content-end">
+                    <div class="d-lg-flex align-items-lg-center lenguage_button">
+                        <a href="../index.html" class="my-0 fw-bold text-light" id="btn_Spa">es</a><span class="mx-1">|</span><a href="../en/index.html" class="my-0 me-4 fw-bold text-light active" id="btn_Eng">en</a>
+                    </div>
+                    <a href="#" class="btn btn-warning fw-bold text-white d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modal-donaciones">Donate <span class="material-symbols-outlined">volunteer_activism</span></a>
+                </div>
+
+                <div class="col-2 col-sm-1 col-md-0">
+                    <div id="mobile_menu" class="mobile_menu btn btn-primary d-flex justify-content-center align-items-center">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container-xl h-100">
+            <div class="row h-100">
+                <div class="col-md-7 py-5 px-2">
+                    <h3 class="">Foundation Breaking Barriers Without Limits for Humanity</h3>
+                    <p class="mt-2 fs-5">We are a non-profit foundation, whose main focus is to support the Salvadoran population, through various social programs that contribute to a better development and human quality.</p>
+                    <p class="fs-5">Salvadoran youth inspire us to keep going, fostering good works together with families and friends.</p>
+                    <div class="btn-bg mt-3">
+                        <a href="nosotros.html" class="btn btn-warning fw-bold fs-5 px-4 py-2 test-btn rounded-0">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <img class="img-banner" src="../build/img/Persona_banner02.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_familia">
+        <div class="container-xl d-flex flex-column justify-content-center align-items-center">
+            <h3 class="">We are a family</h3>
+            <p class="fs-5 mt-2 text-center">Our foundation treats everyone as one family, including those we help and help in the future. That is why we want to support and safeguard the well-being of all people who require our help. Following our values and main axes, we will help in sectors such as education, home, health and the environment. <a href="" class="text-white" data-bs-toggle="modal" data-bs-target="#modal">Do you want to be part of it?</a></p>
+        </div>
+    </section>
+
+    <section class="container-xl">
+        <div class="row py-5">
+            <div class="col-lg-5 d-flex align-items-center flex-column mt-3">
+                <h4>Mission</h4>
+                <p class="text-center mt-3">To create a better quality and to be a standard of human development open to new learning techniques for the urban and rural communities in which the foundation has a presence. Promoting the development and social inclusion of the people we serve generating new opportunities. We guarantee access to better programs and projects in our main axes.</p>
+            </div>
+            <div class="mt-5 mt-lg-3 col-lg-5 d-flex align-items-center flex-column offset-lg-2">
+                <h4>Values</h4>
+                <div id="indicadores" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators valores">
+                        <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="6"></button>
+                    </div>
+    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Solidarity</p>
+                            <p class="text-center mt-1">We build a development approach based on human rights, aimed at its fulfillment and eradicating inequality in the communities with which we work.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Commitment</p>
+                            <p class="text-center mt-1">We act committed to the fulfillment of our mission and vision and with integrity, as a fundamental principle of our actions.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Excellence</p>
+                            <p class="text-center mt-1">We ensure the achievement of our objectives and seek the greatest impact of our actions through the optimization of our capabilities.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Participation</p>
+                            <p class="text-center mt-1">We promote democratic and participatory principles as a necessary means for social transformation and as an inherent end of development.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Transparency</p>
+                            <p class="text-center mt-1">We base our work on honesty, mutual responsibility and maximum access to information, as pillars of social and economic accountability to our collaborators, donors, beneficiaries and society in general.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Unity</p>
+                            <p class="text-center mt-1">We believe in teamwork and collaboration with other organizations and institutions to enhance synergies and improve the performance of our work.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 text-center mt-3 mb-2 valor_text">Dedication</p>
+                            <p class="text-center mt-1">We want to be useful and serve others, giving the best of each one. This vocation prevails in relations with those who are part of the Foundation and with those who cooperate outside of it. At the same time, we demand that all projects and programs be effective.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xl py-5">
+        <h3 class="text-center">Results of your support</h3>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="../build/img/Map_ElSalvador.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <h4>What do we do?</h4>
+                <p>The foundation has been working for eight years in the areas of Education, Health, Environment, Social Development, Family Sustainability. With these axes we contribute to a process of progressive change, agile and operational in each of the projects that are carried out.</p>
+                <p>We cover different areas of social and community development to contribute to our country through the training of children, youth and adults, improving the quality of life of the people who benefit from the projects.</p>
+                <p>Support our work:</p>
+                <div class="btn-bg">
+                    <a href="#" class="btn btn-warning fw-bold fs-5 px-4 py-2 test-btn rounded-0" data-bs-toggle="modal" data-bs-target="#modal-donaciones">Donate <span class="material-symbols-outlined">volunteer_activism</span></a>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mt-3">How do we work?</h4>
+        <p>We work in the western area and have subsidiaries in other cities Texistepeque, Nejapa, Nahuizalco, Los Angeles California and with the various projects we offer greater opportunities that allow rural communities to raise their quality of life, at the same time we seek to improve their social development and family economy through professional training workshops in which they learn a trade to become sustainable families.</p>
+        <div class="row ejes mt-5 py-3 text-center">
+            <h4 class="fw-light mb-5">Our axes</h4>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html" class="bg-primary">
+                    <i class="bi bi-house-fill"></i>
+                </a>
+                <p class="mt-2 fs-5">Housing</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html" class="bg-danger">
+                    <i class="bi bi-heart-fill"></i>
+                </a>
+                <p class="mt-2 fs-5">Health</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html" class="bg-warning">
+                    <i class="bi bi-pen-fill"></i>
+                </a>
+                <p class="mt-2 fs-5">Education</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html" class="bg-success">
+                    <span class="material-symbols-outlined">potted_plant</span>
+                </a>
+                <p class="mt-2 fs-5">Environment</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html">
+                    <span class="material-symbols-outlined">public</span>
+                </a>
+                <p class="mt-2 fs-5">Sustainability</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-md-3 mt-lg-0">
+                <a href="ejes.html" class="bg-primary">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                </a>
+                <p class="mt-2 fs-5">Social Development</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_proyectos py-5">
+        <div class="container-xl">
+            <div id="carouselP" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-7 p-0">
+                            <img width="769.99" height="577.48" class="img-fluid" src="../build/img/proyecto Ecoescuela/proyectoecoescuela-13.webp" alt="First slide">
+                          </div>
+                          <div class="col-md-5 p-5 bg-dark">
+                            <h3 class="text-white">Project ECOESCUELA (2022)</h3>
+                            <p class="text-white">An Eco school is an educational center in which a process of environmental improvement is developed, through research through an audit and subsequent correction of the detected deficiencies, which implies an improvement in educational practice.</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-7 p-0">
+                                <img width="769.99" height="577.48" class="img-fluid" src="../build/img/proyecto edv/proyectoEdv-4.webp" alt="First slide">
+                              </div>
+                              <div class="col-md-5 p-5 bg-dark">
+                                <h3 class="text-white">Food Delivery Project</h3>
+                                <p class="text-white">In response to the needs of the local communities focused on the Family Sustainability axis we make visits to the vulnerable families that we serve from different areas of Metapan delivering food and vitamins thanks to the support of different institutions that donate different products that help in LA food and health of families.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-7 p-0">
+                                <img width="769.99" height="577.48" class="img-fluid" src="../build/img/Programa de alfabetizacion/programaDeAlfabetizacion-1.webp" alt="First slide">
+                              </div>
+                              <div class="col-md-5 p-5 bg-dark">
+                                <h3 class="text-white">Literacy Program</h3>
+                                <p class="text-white">Within the Education Axis we are developing and implementing the literacy program in communities of the municipality of Metapan.</p>
+                                <p class="text-white">Progress of the literacy process in the community cazuelejas canton 'El Rosario'. The foundation continues to carry out and strengthen development education projects for communities.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carouselP" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carouselP" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Boletines -->
+    <section class="section_boletines py-5">
+        <div class="container-xl mt-3">
+            <div class="grid_boletines_en gap-3">
+                <a href="galeria.html" class="boletin_galeria">
+                    <h4 class="text-white">Gallery</h4>
+                </a>
+                <a href="ejes.html" class="boletin_Ejes">
+                    <h4 class="text-white">Axes</h4>
+                </a>
+                <a href="proyectos.html" class="boletin_proyectos">
+                    <h4 class="text-white">Projects</h4>
+                </a>
+                <a href="nosotros.html#fundadores" class="boletin_miembros">
+                    <h4 class="text-white">Founding</h4>
+                </a>
+            </div>
+        </div>
+    </section> <!-- Final Section Boletines -->
+
+    <!-- Section: colaboradores -->
+    <section class="section_colaboradores py-5">
+        <div class="container-xl">
+            <h3 class="text-center">Meet our partners</h3>
+
+            <div id="carouselC" class="carousel slide carousel-dark mt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="grid_colaboradores">
+                          <img class="img-logo" src="../build/img/Logos Colaboradores/Logo_ADM.webp" alt="First slide">
+                          <img class="img-logo max_img_75" src="../build/img/Logos Colaboradores/Logo_Agape.webp" alt="First slide">
+                          <img class="img-logo max_img_75" src="../build/img/Logos Colaboradores/Logo_CA2030.webp" alt="First slide">
+                          <img class="img-logo" src="../build/img/Logos Colaboradores/Logo_BH.webp" alt="First slide">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="grid_colaboradores">
+                            <img class="img-logo" src="../build/img/Logos Colaboradores/Logo_JASV.webp" alt="Second slide">
+                            <img class="img-logo max_img_90" src="../build/img/Logos Colaboradores/Logo_UDB.webp" alt="Second slide">
+                            <img class="img-logo" src="../build/img/Logos Colaboradores/Logo_Vijosa.webp" alt="Second slide">
+                        </div>
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carouselC" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carouselC" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Final Section Colaboradores -->
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+                    <h5 class="footer_title">Follow us</h5>
+                    <div class="d-flex gap-3 footer_social mt-4">
+                        <a href="https://www.facebook.com/FUNROBHUM?locale=es_LA" class="fb">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/50375717633" class="ws">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/funrobhum" class="int">
+                            <i class="bi bi-instagram"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+                    <h5 class="footer_title">About us</h5>
+                    <nav class="nav d-flex flex-column mt-3">
+                        <a href="nosotros.html" class="nav-link text-dark ps-0">What we do?</a>
+                        <a href="nosotros.html#mision_vision" class="nav-link text-dark ps-0 mt-2">Mission & Vision</a>
+                        <a href="nosotros.html#valores" class="nav-link text-dark ps-0 mt-2">Our values</a>
+                        <a href="nosotros.html#fundadores" class="nav-link text-dark ps-0 mt-2">Team</a>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+                    <h5 class="footer_title">Ubication</h5>
+                    <p class="text-dark p-0 mt-4">----------</p>
+                    <a href="contactanos.html" class="nav-link text-dark ps-0 mt-3">More of our locations</a>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+                    <h5 class="footer_title">Collaborators</h5>
+                    <nav class="nav d-flex flex-column mt-3">
+                        <a href="colaboradores.html" class="nav-link text-dark ps-0">Our collaborators</a>
+                        <a href="#" class="nav-link text-dark ps-0 mt-2" data-bs-toggle="modal" data-bs-target="#modal-colaboradores">Do you want to be part of it?</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Final Footer -->
+
+    <!-- Modales: Voluntariado y Donaciones -->
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog D-flex modal-xl justify-content-center align-items-center h-100 w-100 my-5 rounded-0">
+          <div class="modal-content rounded-0">
+            
+            <div class="modal-header">
+              <button data-bs-dismiss="modal" type="button" class="btn btn-close"></button>
+            </div>
+      
+            <div class="modal-body p-0">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="../build/img/Voluntariado.webp" alt="Imagen correspondiente al voluntariado de fundacion rompiendo barreras sin limite para la humanidad">
+                    </div>
+                    <div class="col-lg-6 ps-5 ps-lg-3 col-voluntariado">
+                        <h4 class="fw-light mt-3">Be part of our family</h4>
+                        <div class="mt-3">
+                            <p class="fs-5 fw-bold">Contact us through our networks</p>
+                            <div class="contacto_social_voluntariado mt-3">
+                                <a href="https://www.facebook.com/FUNROBHUM?locale=es_LA" class="fb">
+                                    <p class="fs-5"><i class="bi bi-facebook"></i> Our Facebook page</p>
+                                </a>
+
+                                <a href="https://wa.me/50375717633" class="ws">
+                                    <p class="fs-5"><i class="bi bi-whatsapp"></i> Chat on WhatsApp</p>
+                                </a>
+
+                                <a href="" class="inst">
+                                    <p class="fs-5"><i class="bi bi-instagram"></i> Our Instagram page</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 class="">headquarters in Metapán</h4>
+                            <p class="fw-bold mt-3 mb-0">Address</p>
+                            <p class="m-0">Lotificacion miraflores primer pasaje 50 metros arriba de iglesia bautista Distrito de metapan</p>
+                            <p class="fw-bold mt-3 mb-0">Phone number</p>
+                            <p class="m-0">7254 0240</p>
+                            <p class="fw-bold mt-3 mb-0">E-mail</p>
+                            <p class="m-0">funrobhum@gmail.com</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-donaciones" class="modal fade">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+              <h4 class="modal-title fw-bold text-primary">Make a Donation</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            
+            <div class="modal-body modal-body_donates p-4">
+              <p class="text-center text-muted mb-4">Your contribution makes a difference. Thank you for supporting our cause.</p>
+              
+              <!-- Opción 1: PayPal (Recomendado) -->
+              <div class="donation-method mb-4">
+                <h5 class="mb-3 fw-semibold">
+                  <i class="bi bi-paypal text-primary"></i> Donate with PayPal
+                </h5>
+                <p class="text-muted small mb-3">Accepts credit cards, debit cards and PayPal. Secure and fast.</p>
+                
+                <!-- Botones de montos rápidos -->
+                <div class="donation-amounts mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                  <button class="btn btn-outline-primary amount-btn" data-amount="10">$10</button>
+                  <button class="btn btn-outline-primary amount-btn" data-amount="25">$25</button>
+                  <button class="btn btn-outline-primary amount-btn" data-amount="50">$50</button>
+                  <button class="btn btn-outline-primary amount-btn" data-amount="100">$100</button>
+                  <button class="btn btn-outline-primary amount-btn" data-amount="250">$250</button>
+                </div>
+                
+                <!-- Monto personalizado -->
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="number" class="form-control" id="custom-amount" placeholder="Custom amount" min="1" step="0.01">
+                  <button class="btn btn-primary" id="paypal-donate-btn">
+                    <i class="bi bi-paypal"></i> Donate with PayPal
+                  </button>
+                </div>
+                
+                <!-- PayPal Button Container -->
+                <div id="paypal-button-container" class="text-center"></div>
+              </div>
+              
+              <hr class="my-4">
+              
+              <!-- Opción 2: Transferencia Bancaria -->
+              <div class="donation-method mb-4">
+                <h5 class="mb-3 fw-semibold">
+                  <i class="bi bi-bank text-success"></i> Bank Transfer
+                </h5>
+                <p class="text-muted small mb-3">For donors in El Salvador. No additional fees.</p>
+                
+                <div class="bank-info bg-light p-3 rounded">
+                  <div class="mb-2">
+                    <strong>Bank:</strong> 
+                    <span class="text-primary">[Bank Name]</span>
+                  </div>
+                  <div class="mb-2">
+                    <strong>Account:</strong> 
+                    <span class="text-primary" id="account-number">[Account Number]</span>
+                    <button class="btn btn-sm btn-link p-0 ms-2" onclick="copyAccountNumber()">
+                      <i class="bi bi-clipboard"></i> Copy
+                    </button>
+                  </div>
+                  <div class="mb-0">
+                    <strong>Name:</strong> 
+                    <span class="text-primary">Foundation Breaking Barriers Without Limits</span>
+                  </div>
+                </div>
+                
+                <p class="text-muted small mt-3 mb-0">
+                  <i class="bi bi-info-circle"></i> 
+                  After making the transfer, send us the receipt via WhatsApp.
+                </p>
+              </div>
+              
+              <hr class="my-4">
+              
+              <!-- Opción 3: WhatsApp (Como respaldo) -->
+              <div class="donation-method text-center">
+                <h5 class="mb-3 fw-semibold">
+                  <i class="bi bi-whatsapp text-success"></i> Or contact us directly
+                </h5>
+                <a href="https://wa.me/50375717633?text=Hello,%20I%20would%20like%20to%20make%20a%20donation" 
+                   class="btn btn-success btn-lg" 
+                   target="_blank">
+                  <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div id="modal-colaboradores" class="modal fade">
+        <div class="modal-dialog D-flex modal-md justify-content-center align-items-center h-100 w-100 my-5">
+          <div class="modal-content">
+      
+            <div class="modal-body modal-body_donates">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-symbols-outlined construct_temp m-0 text-secondary text-danger">handshake</span>
+                    <p class="fs-5 fw-bold text-center">Do you want to be part of our collaborators?</p>
+                    <p class="fs-5 text-secondary text-center">Then do not hesitate to contact us, you can write to us by facebook or whatsapp.</p>
+
+                    <p class="mb-3 fw-light mt-3">Click on any of the following links</p>
+                    <a href="https://www.facebook.com/FUNROBHUM?locale=es_LA" class="text-secondary fw-bold link_facebook">
+                        <p><i class="bi bi-facebook"></i> FunRobHum</p>
+                    </a>
+                    <a href="https://wa.me/50375717633" class="text-secondary fw-bold link_whatsapp">
+                        <p><i class="bi bi-whatsapp"></i> +503 7571-7633</p>
+                    </a>
+                </div>
+            </div>
+      
+          </div>
+        </div>
+      </div><!-- Final Modales -->
+
+      <!-- Menu mobile -->
+      <div class="menu" id="menu">
+        <div class="d-flex h-100 py-5 flex-column justify-content-evenly align-items-center">
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+
+            <a href="galeria.html">
+                <h2>Gallery</h2>
+            </a>
+
+            <a href="ejes.html">
+                <h2>Axes</h2>
+            </a>
+
+            <a href="proyectos.html">
+                <h2>Projects</h2>
+            </a>
+
+            <a href="nosotros.html">
+                <h2>About us</h2>
+            </a>
+
+            <a href="contactanos.html">
+                <h2>Contact us</h2>
+            </a>
+        </div>
+
+        <div class="close">
+            <i class="bi bi-x-lg"></i>
+        </div>
+      </div> <!-- Final Menu mobile -->
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID_PAYPAL_AQUI&currency=USD&intent=capture"></script>
+    
+    <script src="../build/js/bootstrap.bundle.min.js"></script>
+    <script src="../build/js/app.js"></script>
+    <script src="../build/js/donaciones.js"></script>
+</body>
+</html>

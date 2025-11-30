@@ -1,0 +1,153 @@
+@use '../custom' as *;
+@use '../base/mixin' as m;
+@use '../base/animaciones' as *;
+
+.section_boletines {
+    padding: 80px 0;
+    background: linear-gradient(135deg, lighten($primary, 48%) 0%, $white 100%);
+      
+    .grid_boletines {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+    }
+
+    .boletin_galeria, .boletin_Ejes, .boletin_proyectos, .boletin_miembros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 280px;
+        border-radius: 20px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        
+        // Overlay base con efecto de profundidad
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+        
+        // Texto original
+        h4 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 2;
+            position: relative;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        // Texto "Leer más" que aparece en hover
+        &::after {
+            content: 'Leer más';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) translateY(30px);
+            opacity: 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $white;
+            z-index: 3;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            pointer-events: none;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        // Efectos al hacer hover
+        &:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            
+            // Oscurecer overlay con color
+            &::before {
+                background: rgba(0, 0, 0, 0.7);
+            }
+            
+            // Ocultar texto original suavemente
+            h4 {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            
+            // Mostrar "Leer más"
+            &::after {
+                opacity: 1;
+                transform: translate(-50%, -50%) translateY(0);
+            }
+        }
+    }
+
+    // Colores específicos para cada tarjeta
+    .boletin_galeria {
+        @include m.background-image-red("../img/image_familia.webp");
+        
+        &:hover::before {
+            background: linear-gradient(135deg, rgba($danger, 0.9), rgba(darken($danger, 10%), 0.9));
+        }
+    }
+
+    .boletin_Ejes {
+        @include m.background-image-blue("../img/image_familia.webp");
+        
+        &:hover::before {
+            background: linear-gradient(135deg, rgba($primary, 0.9), rgba(darken($primary, 10%), 0.9));
+        }
+    }
+
+    .boletin_proyectos {
+        @include m.background-image-green("../img/image_familia.webp");
+        
+        &:hover::before {
+            background: linear-gradient(135deg, rgba($success, 0.9), rgba(darken($success, 10%), 0.9));
+        }
+    }
+
+    .boletin_miembros {
+        @include m.background-image-yellow("../img/image_familia.webp");
+        
+        &:hover::before {
+            background: linear-gradient(135deg, rgba($warning, 0.9), rgba(darken($warning, 10%), 0.9));
+        }
+    }
+
+    // Versión en inglés
+    .grid_boletines_en {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .boletin_galeria::after, 
+        .boletin_Ejes::after, 
+        .boletin_proyectos::after, 
+        .boletin_miembros::after {
+            content: 'Read more';
+        }
+    }
+}
