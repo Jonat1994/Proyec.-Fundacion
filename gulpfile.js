@@ -36,7 +36,7 @@ function versionWebp() {
 
 
 function copyHtml() {
-    return src(['*.html', 'en/**/*.html', 'json/**/*.json', 'build/**/*'], { base: '.' })
+    return src(['*.html', 'en/**/*.html', 'json/**/*.json'], { base: '.' })
         .pipe(dest('dist'))
 }
 
