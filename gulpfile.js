@@ -9,14 +9,13 @@ const rename = require('gulp-rename');
 const webp = require('gulp-webp');
 
 function css( done ) {
-    src('src/sass/app.scss') // Identificar el archivo principal
+    return src('src/sass/app.scss') // Identificar el archivo principal
         .pipe( sass() ) // Compilar SASS
         .pipe( dest('build/css') ) // Exportarlo o guardarlo en una ubicación
-    done();
 }
 
 function cssbuild( done ) {
-    src('build/css/app.css')
+    return src('build/css/app.css', { allowEmpty: true })
         .pipe( rename({
             suffix: '.min'
         }))
@@ -24,8 +23,6 @@ function cssbuild( done ) {
             content: ['index.html']
         }))
         .pipe( dest('build/css'))
-
-    done();
 }
 
 function versionWebp() {
@@ -44,4 +41,4 @@ exports.css = css;
 exports.dev = dev;
 exports.webp = versionWebp;
 exports.default = series( css, dev, versionWebp );
-exports.build = series( cssbuild );
+exports.build = series( css, cssbuild, versionWebp );
